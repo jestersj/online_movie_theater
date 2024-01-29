@@ -1,0 +1,25 @@
+.header_section {
+    background: url("../../_assets/movies/ford_pic.png") no-repeat right;
+    background-size: contain;
+    height: 85dvh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.block {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.logo {
+    width: 70%;
+    height: auto;
+}
+.btn_block {
+    display: flex;
+    gap: 24px;
+}

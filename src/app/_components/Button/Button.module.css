@@ -1,0 +1,21 @@
+.btn {
+    border: none;
+    color: var(--text-color);
+    padding: 24px 32px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: scale(105%);
+}
+.gradient {
+    background: var(--gradient);
+}
+.gray {
+    background: var(--secondary_btn);
+}
+.icon {
+    width: 28px;
+    height: auto;
+}
