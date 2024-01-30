@@ -9,33 +9,34 @@ import person from '@/app/_assets/person.svg';
 import house from '@/app/_assets/house-door.svg';
 import search from '@/app/_assets/search.svg';
 import tv from '@/app/_assets/tv.svg';
+import Link from "next/link";
 import s from './Navbar.module.css';
 
 const Navbar = () => {
     return (
         <nav className={s.nav}>
-            <a href={'/'}>
+            <Link href={'/'}>
                 <Image src={logo} alt={'ТVOЁ'} className={s.logo}/>
-            </a>
+            </Link>
             <div className={s.btn_cont}>
-                <a href={'/'}>
+                <Link href={'/'}>
                     <Image src={search} alt={'Поиск'}/>
-                </a>
-                <a href={'/'}>
+                </Link>
+                <Link href={'/'}>
                     <Image src={house} alt={'Домой'}/>
-                </a>
-                <a href={'/'}>
+                </Link>
+                <Link href={'/'}>
                     <Image src={play} alt={'Кинотеатр'}/>
-                </a>
-                <a href={'/'}>
+                </Link>
+                <Link href={'/'}>
                     <Image src={tv} alt={'Устройство'}/>
-                </a>
-                <a href={'/'}>
+                </Link>
+                <Link href={'/'}>
                     <Image src={heart} alt={'Избранное'}/>
-                </a>
-                <a href={'/'}>
+                </Link>
+                <Link href={'/'}>
                     <Image src={person} alt={'ЛК'}/>
-                </a>
+                </Link>
             </div>
             <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
                 <Image src={up} alt={'Наверх'}/>

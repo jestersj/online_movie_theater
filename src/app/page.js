@@ -3,6 +3,7 @@ import HeaderSection from "@/app/_components/HeaderSection/HeaderSection";
 import List from "@/app/_components/List/List";
 import movies from './movies'
 import Card from "@/app/_components/Card/Card";
+import Link from "next/link";
 import s from "./page.module.css";
 
 export default function Home() {
@@ -21,10 +22,10 @@ export default function Home() {
                 <List gap={80}>
                     {
                         movies.topTen.map((item, ind) =>
-                            <a href={'/series'} key={item.name} className={s.top10_item}>
+                            <Link href={'/series'} key={item.name} className={s.top10_item}>
                                 <span className={s.top10_number}>{ind + 1}</span>
                                 <Image src={item.img} alt={item.name} className={s.top10_img}/>
-                            </a>
+                            </Link>
                         )
                     }
                 </List>
